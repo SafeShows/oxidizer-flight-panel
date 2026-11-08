@@ -1,0 +1,12 @@
+[package]
+name = "flight_panel" # also the mod id (its folder in mods/): rename together with mod/mod.toml
+version = "0.1.0"
+edition = "2024"
+publish = false
+
+[lib]
+crate-type = ["cdylib"]
+
+[dependencies]
+oxidizer_api = "0.3"
+toml = "1.2"

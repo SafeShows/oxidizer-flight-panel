@@ -1,0 +1,29 @@
+# The content index listing for this mod (https://github.com/KSAModding/content-index), as listings/flight_panel.toml.
+# Publish a release first: the index checks the latest release when the pull request is opened.
+spec_version = 1
+id = "flight_panel"
+type = "mod"
+name = "Flight Panel"
+authors = ["SafeShows"]
+abstract = "Live flight data in a window, and a warp guard that limits time warp at low altitude. An example mod for Oxidizer, written in Rust."
+license = "MIT-0"
+tags = ["user-interface"]
+
+[releases]
+github = "SafeShows/oxidizer-flight-panel"
+
+[links]
+forums = "https://forums.ahwoo.com/forums/kitten-space-agency/tools/oxidizer-write-ksa-mods-in-rust-or-rhai-scripts-mod-loader.1559/"
+repository = "https://github.com/SafeShows/oxidizer-flight-panel"
+
+[compatibility]
+game_min = "2026.10.25.5707"
+
+# Runs as a StarMap mod through Oxidizer.StarMap (mod managers install both), and with standalone Oxidizer.
+[loader]
+id = "StarMap"
+
+[[dependencies]]
+id = "Oxidizer.StarMap"
+kind = "required"
+min = "0.4.0"

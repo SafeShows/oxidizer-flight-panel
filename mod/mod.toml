@@ -1,0 +1,6 @@
+name = "flight_panel"
+
+[oxidizer]
+# The library is in bin/: flight_panel.dll on Windows, libflight_panel.so on Linux, libflight_panel.dylib on macOS.
+# (Not next to this file: StarMap would try to load mods/flight_panel/flight_panel.dll as a C# mod.)
+dll = "bin/flight_panel"
