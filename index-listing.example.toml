@@ -42,6 +42,7 @@ os = ["windows", "linux", "macos"]
 
 [loader]
 id = "StarMap"
+min = "0.4.6"                      # the StarMap version Oxidizer.StarMap needs; the index requires a min
 
 [[dependencies]]
 id = "Oxidizer.StarMap"
