@@ -46,6 +46,7 @@ jobs:
           cp -R mod/. "dist/$id/"
           cp libs/* "dist/$id/bin/"
           cp LICENSE "dist/$id/"
+          python3 scripts/notices.py "dist/$id/THIRD-PARTY-NOTICES.txt" # licenses of the crates in the library
           cd dist && zip -qr "../$id-$version.zip" "$id"
 
       - name: Zip (manual run)

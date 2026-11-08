@@ -57,7 +57,7 @@ Both take the mods folder as an argument if the game isn't in the usual place. *
 the mod's log and errors.
 
 Pushing a tag like `v1.0.0` makes the release workflow build Windows, Linux and macOS libraries and publish
-`flight_panel-1.0.0.zip`.
+`flight_panel-1.0.0.zip`, with `THIRD-PARTY-NOTICES.txt` for the crates compiled in (`scripts/notices.py`).
 
 ## License
 
